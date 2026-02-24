@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" data-testid="main-navbar">
+        <div class="nav-container">
+            <div class="logo" data-testid="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Wanderlust</span>
+            </div>
+            <ul class="nav-menu" data-testid="nav-menu">
+                <li><a href="#home" data-testid="nav-home">Home</a></li>
+                <li><a href="#destinations" data-testid="nav-destinations">Destinations</a></li>
+                <li><a href="#packages" data-testid="nav-packages">Packages</a></li>
+                <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" data-testid="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title" data-testid="hero-title">Journey Beyond Boundaries with Wanderlust</h1>
+            <p class="hero-subtitle" data-testid="hero-subtitle">Discover extraordinary places, create unforgettable memories</p>
+            <a href="#destinations" class="hero-btn" data-testid="hero-cta">Explore Destinations</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations" data-testid="destinations-section">
+        <div class="container">
+            <div class="section-header fade-in" data-testid="destinations-header">
+                <h2>Places We Visit</h2>
+                <p>Curated destinations that capture the essence of adventure</p>
+            </div>
+            <div class="bento-grid" data-testid="destinations-grid">
+                <!-- China -->
+                <div class="destination-card card-large" data-testid="destination-lahore">
+                    <div class="card-image">
+                        <img src="2. China.png" alt="China">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>China</h3>
+                        <p>Experience the beauty and heart felt scenery of China</p>
+                    </div>
+                </div>
+
+                <!-- Malaysia -->
+                <div class="destination-card card-tall" data-testid="destination-kaghan">
+                    <div class="card-image">
+                        <img src="5. Malaysia.png" alt="Malaysia">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Malaysia</h3>
+                        <p>Breathtaking tapestry of emerald rainforests, golden beaches, and vibrant cultures woven together under a sky painted with tropical sunsets.</p>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="destination-card card-wide" data-testid="destination-swat">
+                    <div class="card-image">
+                        <img src="3. UAE.png" alt="UAE">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>UAE</h3>
+                        <p>A land where timeless desert traditions blend seamlessly with visionary cities, creating a nation that shines with innovation, culture, and Arabian elegance.</p>
+                    </div>
+                </div>
+
+                <!-- Indonesia -->
+                <div class="destination-card card-medium" data-testid="destination-dubai">
+                    <div class="card-image">
+                        <img src="4. Indonesia.png" alt="Indonesia">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Indonesia</h3>
+                        <p>A breathtaking archipelago of emerald islands, ancient temples, and turquoise waters, where nature and culture dance in perfect harmony.</p>
+                    </div>
+                </div>
+
+                <!-- Sril Lanka -->
+                <div class="destination-card card-medium" data-testid="destination-malaysia">
+                    <div class="card-image">
+                        <img src="6. Srilanka.png" alt="Sri Lanka">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sri Lanka</h3>
+                        <p>A tropical jewel of golden beaches, misty tea hills, and ancient wonders, where every sunrise tells a story of timeless beauty and rich heritage.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages" data-testid="packages-section">
+        <div class="container">
+            <div class="section-header fade-in" data-testid="packages-header">
+                <h2>Travel Packages</h2>
+                <p>Carefully crafted journeys for every type of traveler</p>
+            </div>
+            <div class="packages-grid" data-testid="packages-grid">
+                <!-- Weekend Getaway -->
+                <div class="package-card" data-testid="package-weekend">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-header">
+                        <h3>Standard Package</h3>
+                        <div class="package-price">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">/person</span>
+                        </div>
+                    </div>
+                    <div class="package-divider"></div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>8 Days / 6 Nights</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>4-Star Accommodation</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Daily Breakfast</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-van-shuttle"></i>
+                            <span>Airport Transfers</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>City Tour Included</span>
+                        </div>
+                    </div>
+                    <button class="package-btn" data-testid="package-weekend-btn">Book Now</button>
+                </div>
+
+                <!-- Adventure Tour -->
+                <div class="package-card featured" data-testid="package-adventure">
+                    <div class="package-badge best-value">Best Value</div>
+                    <div class="package-header">
+                        <h3>Adventure Package</h3>
+                        <div class="package-price">
+                            <span class="currency">$</span>
+                            <span class="amount">599</span>
+                            <span class="period">/person</span>
+                        </div>
+                    </div>
+                    <div class="package-divider"></div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>15 Days / 13 Nights</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>4-Star Accommodation</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>All Meals Included</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Adventure Activities</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Professional Guide</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Photography Sessions</span>
+                        </div>
+                    </div>
+                    <button class="package-btn" data-testid="package-adventure-btn">Book Now</button>
+                </div>
+
+                <!-- Luxury Escape -->
+                <div class="package-card" data-testid="package-luxury">
+                    <div class="package-badge">Premium</div>
+                    <div class="package-header">
+                        <h3>Luxury Escape</h3>
+                        <div class="package-price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/person</span>
+                        </div>
+                    </div>
+                    <div class="package-divider"></div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>12 Days / 11 Nights</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-crown"></i>
+                            <span>5-Star Luxury Resorts</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-champagne-glasses"></i>
+                            <span>Gourmet Dining</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-spa"></i>
+                            <span>Spa & Wellness</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <span>Private Transport</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>Personal Concierge</span>
+                        </div>
+                    </div>
+                    <button class="package-btn" data-testid="package-luxury-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" data-testid="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in" data-testid="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p class="contact-subtitle">Let's plan your next adventure together</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item" data-testid="contact-phone">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 333-1234567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" data-testid="contact-email">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>travel.wanderlust@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" data-testid="contact-address">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Adventure Boulevard<br>Travel City, TC 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links" data-testid="social-links">
+                        <a href="#" data-testid="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" data-testid="social-youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper fade-in" data-testid="contact-form-wrapper">
+                    <form class="contact-form" data-testid="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" data-testid="form-name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" data-testid="form-email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" data-testid="form-phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Tell us about your dream destination..." data-testid="form-message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-testid="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <p>&copy; 2026 Wanderlust Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

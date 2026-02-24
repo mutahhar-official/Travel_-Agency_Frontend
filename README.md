@@ -82,5 +82,5 @@ This project was created to practice and demonstrate frontend development skills
 
 ## 👨‍💻 Author
 
-Muhammad Mutahhar Khan
-LinkedIn: https://www.linkedin.com/in/muhammad-mutahhar-khan-562070378/
+-Muhammad Mutahhar Khan
+-LinkedIn: https://www.linkedin.com/in/muhammad-mutahhar-khan-562070378/
